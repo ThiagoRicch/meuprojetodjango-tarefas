@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style-home.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <h1> Bem vindo! Aqui estão as suas tarefas! </h1>
+    <table class="task-table"
+        <thead>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Status</th>
+            <th>Data de Criação</th>
+            <tbody>
+                {% for tarefa in tarefas %}
+                    <tr>
+                        <td>{{tarefa.nome}}</td>
+                        <td>{{tarefa.descricao}}</td>
+                        <td>{% if tarefa.status_tarefas %}Completo{% else %}Incompleto{% endif %}</td>
+                        <td>{{tarefa.dt_criacao}}</td>
+                        <td><a href="{% url 'tarefas:editar' tarefa.id%}" class="btn-editar">Editar</a></td>
+                        <td><a href="{% url 'tarefas:remover' tarefa.id%}" class="btn-remover">Remover</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </thead>
+    </table>
+    <a href="{% url 'tarefas:adicionar' %}" class="btn-adicionar"">Adicionar Tarefas</a>
+</body>
+</html>

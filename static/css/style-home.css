@@ -1,0 +1,86 @@
+.task-table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: #ddd;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.task-table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.task-table td {
+    border-top: 1px solid #444;
+    padding: 10px;
+}
+
+.task-table tbody tr:hover {
+    background-color: #2a2a2a;
+}
+
+.btn-editar {
+    background-color: #320038;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid #666;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #666;
+    border-color: #888;
+}
+
+.body{
+    background-color: black;
+    color: white;
+}
+
+.btn-adicionar {
+    background-color: #320038;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid #666;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, border 0.3s;
+    margin-top: 40px;
+}
+
+.btn-adicionar:hover {
+    background-color: #666;
+    border-color: #888;
+}
+
+.btn-remover {
+    background-color: #320038;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid #666;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-remover:hover {
+    background-color: #666;
+    border-color: #888;
+}
+
+

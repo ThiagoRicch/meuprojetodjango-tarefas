@@ -1,0 +1,21 @@
+.body_adicionar{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.interface {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.btn_salvar {
+    background-color: #320038;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px;
+}
